@@ -58,7 +58,7 @@ expense-tracker/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
+git clone  https://github.com/kalabGoitom/expense-tracker-api.git
 cd expense-tracker
 ```
 
@@ -108,12 +108,12 @@ Base path:
 /auth
 ```
 
-| Method | Endpoint | Description | Protected |
-| --- | --- | --- | --- |
-| POST | `/signup` | Register a new user | No |
-| POST | `/login` | Login user | No |
-| POST | `/logout` | Logout user | Yes |
-| DELETE | `/deleteAccount` | Delete user account | Yes |
+| Method | Endpoint         | Description         | Protected |
+| ------ | ---------------- | ------------------- | --------- |
+| POST   | `/signup`        | Register a new user | No        |
+| POST   | `/login`         | Login user          | No        |
+| POST   | `/logout`        | Logout user         | Yes       |
+| DELETE | `/deleteAccount` | Delete user account | Yes       |
 
 ### Expense Routes
 
@@ -123,15 +123,15 @@ Base path:
 /expenses
 ```
 
-| Method | Endpoint | Description | Protected |
-| --- | --- | --- | --- |
-| POST | `/` | Create an expense record | Yes |
-| GET | `/` | Get all expense records for the logged-in user | Yes |
-| GET | `/summery` | Get income, expense, and balance summary | Yes |
-| GET | `/:id` | Get one expense record | Yes |
-| PATCH | `/:id` | Update an expense record | Yes |
-| DELETE | `/:id` | Delete one expense record | Yes |
-| DELETE | `/` | Delete all expense records for the logged-in user | Yes |
+| Method | Endpoint   | Description                                       | Protected |
+| ------ | ---------- | ------------------------------------------------- | --------- |
+| POST   | `/`        | Create an expense record                          | Yes       |
+| GET    | `/`        | Get all expense records for the logged-in user    | Yes       |
+| GET    | `/summery` | Get income, expense, and balance summary          | Yes       |
+| GET    | `/:id`     | Get one expense record                            | Yes       |
+| PATCH  | `/:id`     | Update an expense record                          | Yes       |
+| DELETE | `/:id`     | Delete one expense record                         | Yes       |
+| DELETE | `/`        | Delete all expense records for the logged-in user | Yes       |
 
 ## Example Requests
 
