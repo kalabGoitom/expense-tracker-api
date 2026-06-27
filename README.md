@@ -43,9 +43,9 @@ expense-tracker/
 │   ├── routes/
 │   │   ├── auth.js
 │   │   └── expense.js
-│   ├── utilties/
+│   ├── utilities/
 │   │   └── generateToken.js
-│   ├── validiators/
+│   ├── validators/
 │   │   ├── auth.js
 │   │   └── expense.js
 │   └── app.js
