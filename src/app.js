@@ -34,3 +34,27 @@ const start = async () => {
 };
 
 start();
+
+process.on("unhandledRejection", (err) => {
+  console.error("Unhandled Rejection", err);
+  app.close(async () => {
+    await disconnectDB();
+    process.exit(1);
+  });
+});
+
+process.on("uncaughtRejection", (err) => {
+  console.error("Uncaught Rejection", err);
+  app.close(async () => {
+    await disconnectDB();
+    process.exit(1);
+  });
+});
+
+process.on("SIGTERM", (err) => {
+  console.error("SIGTERM received, shutting down");
+  app.close(async () => {
+    await disconnectDB();
+    process.exit(1);
+  });
+});
